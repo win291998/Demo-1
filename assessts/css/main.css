@@ -9,6 +9,7 @@
     overflow: hidden;
 }
 #main{
+    height: 10000px;
 }
 /* define css */
 .font-size-24{
@@ -55,7 +56,7 @@
 
 
 #header{
-
+    max-width: 100%;
     top: 0;
     width: 100%;
 }
@@ -64,9 +65,7 @@
     
     height: 40px;
     background-color: #323232;
-    top: 0;
-    left: 0;
-    right: 0;
+
 }
 #top-nav li{
     display: inline-block;
@@ -105,6 +104,13 @@
     background-color: #FFFFFF;
 }
 
+.btn-down{
+    display: none;
+    width: 50px;
+    float: right;
+    margin-top: 12px;
+}
+
 #nav .logo1{
     display: inline-block;
     padding: 13px 0;
@@ -117,6 +123,7 @@
     display: inline-block;
 }
 .nav-list li a {
+    font-size: 14px;
     text-decoration: none;
     color: #181F28;
     font-family: 'Montserrat';
@@ -134,6 +141,9 @@
     display: contents;
     
     margin-top: 120px;
+}
+.title-slider{
+    
 }
 .img-slider{
    width: 100%;
@@ -186,7 +196,8 @@
 .course-ful{
 	width: 100%;
 	margin: 30px 0;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .title-content-section{
@@ -196,7 +207,7 @@
 
 .info-enterprise{
 	margin: 0 8px;
-    width: calc(100% / 3);
+    width: 30%;
 	border: 1px solid #CBCDD2;
 }
 
@@ -242,8 +253,19 @@
 /* btn */
 
 /* list */
+.list-items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .items{
-	width: 25%;
+	width: 20%;
 	border: 1px solid #CBCDD2;
     margin: 0 16px;
 
@@ -259,9 +281,7 @@
     width: 100%;
     height: 16px;
 }
-.list-items{
-	display: flex;
-}
+
 
 /* News */
 
@@ -271,6 +291,9 @@
     width: 100%;
     border: 1px solid #CBCDD2;
 }
+
+
+
 .content-news{
     width: 65%;
     margin: 30px;
@@ -286,11 +309,14 @@
     display: flex;
     width: 100%;
 }
+.row-news-items{
+    width: 30%;
+}
 .content-infor li{
     display: inline-block;
 }
 .news-items-infor{
-    width: 30%;
+    width: 170px;
     margin: 14px 0;
 }
 .content-summary{
@@ -317,10 +343,13 @@
     left: 15%;
     /* background-color: black; */
     height: 160px;
+    max-width: max-content;
 }
 
-.footer-infor{
 
+/* bottom footer */
+.footer-infor{
+    
 }
 .footer-infor li{
     display: inline-block;
@@ -329,58 +358,69 @@
     font-size: 14px;
 }
 .logo-list-footer{
-
-   line-height: 100px;
-
+    margin-top: 24px;
+    display: flex;
 }
 
 .bottom-footer{
     width: 100%;
     height: 100px;
+    
 }
 .logo-bottom{
-    width: 25%;
-    float: left;
+    width: 50%;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
 .logo-bottom-footer{
-    
+    width: 100%;
+    display: flex;
 }
 
 .logo-pay{
-    width: 90%;
-    margin-right: 16px;
+    width: 240px;
+    height: 25px;
+    
 }
 .logo-lisa{
-    float: left;
-    width: 40%;
-    margin-top: 28px;
+    width: 97px;
+    height: 31px;
+    margin-left: 8px;
 }
 .p-bottom{
-    float: left;
-    width: 50%;
-    margin-left: 16px;
+    text-align: center;
+    margin-top: 6px;
 }
 .p-huong-viet{
     font-size: 12px;
+    /* line-height: 100px; */
+    margin-left: 14px;
 
 }
 .logo-huong-viet{
-    width: 80%;
-    margin-top: 16px;
-    margin-left: 8px;
+    width: 203;
+    height: 62px;
+
 }
 
 .logo-bo{
-    float: left;
-    margin-top: 24px;
-   margin-left: 24px;
+    width: 119px;
+    height: 44px;
 
 }
 .logo-mxh{
-    float: right;
-    width: 30%;
-    margin-top: 6px;
 
+    width: 30%;
+    margin-top: 8px;
+    margin-left: 24px;
 }
+.bottom-50{
+    width: 50%;
+    display: flex;
+}
+/* end bottom footer */
+
+
